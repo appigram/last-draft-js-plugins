@@ -9,7 +9,14 @@ import {
 
 import BlockTypeSelect from '../BlockTypeSelect'
 
-const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, openModal, closeModal }) => (
+const defaultStructure = [
+  AddImageButton,
+  AddEmbedButton,
+  AddGifButton,
+  AddEmojiButton
+]
+
+const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, structure, store, openModal, closeModal }) => (
   <BlockTypeSelect
     getEditorState={getEditorState}
     setEditorState={setEditorState}
@@ -17,12 +24,7 @@ const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, 
     store={store}
     openModal={openModal}
     closeModal={closeModal}
-    structure={[
-      AddImageButton,
-      AddEmbedButton,
-      AddGifButton,
-      AddEmojiButton
-    ]}
+    structure={defaultStructure}
   />
 )
 

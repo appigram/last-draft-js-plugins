@@ -1,4 +1,5 @@
 import {
+  ImageModal,
   ColorModal,
   EmbedModal,
   EmojiModal,
@@ -6,6 +7,7 @@ import {
 } from 'draft-js-modal-plugin'
 
 const getModalByType = (type) => {
+  if (type === 'image') { return ImageModal }
   if (type === 'color') { return ColorModal }
   if (type === 'embed') { return EmbedModal }
   if (type === 'emoji') { return EmojiModal }
