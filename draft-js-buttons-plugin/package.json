@@ -28,13 +28,13 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "draft-js": "0.10.1",
-    "react": "15.5.0",
-    "react-dom": "15.5.0"
+    "draft-js": "0.10.4",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
   },
   "peerDependencies": {
-    "draft-js": "0.10.1",
-    "react": "15.5.0",
-    "react-dom": "15.5.0"
+    "draft-js": "0.10.4",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
   }
 }
